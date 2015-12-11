@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	#notify-permission
+	button(onclick="show()") 通知を表示
+	button(onclick="requestPermission()") 通知許可を求める
+	
